@@ -2,40 +2,38 @@
 <html>
   <head>
     <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <title>Linkeding SDV</title>
     <style>
       body {
-        font-family: Arial, sans-serif;
-        background: #f3f2ef;
-        display: flex;
-        justify-content: center;
-        padding: 20px;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f3f2ef;
       }
 
-      .profile-card {
-        width: 100%;
-        max-width: 400px;
-        bckground: white;
-        border-radius: 12px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        overflow: hidden;
+      /* Header */
+      .header {
+        background-color: #0A66C2;
+        height: 80px;
       }
 
-      .cover {
-        height: 120px;
-        background: #0A66C2;
+       /* Profile Section */
+      .profile {
+        background: white;
+        padding: 16px;
+        position: relative;
       }
 
-      .profile -img {
+      .profile-img {
         width: 100px;
         height: 100px;
         border-radius: 50%;
         border: 4px solid white;
-        margin-top: -50px;
-        margin-left: 20px;
+        position: absolute;
+        top: -50px;
       }
 
-      .content {
-        padding: 20px;
+      .profile-content {
+        margin-top: 60px;
       }
 
       .name {
@@ -43,34 +41,109 @@
         font-weight: bold;
       }
 
-      .title {
-        color: gray;
+      .headline {
+        color: #555;
         font-size: 14px;
-        margin-bottom: 10px;
+        margin-top: 4px;
       }
 
-      .button {
-        display: inline-block:
+      .location {
+        color: gray;
+        font-size: 13px;
+        margin-top: 4px;
+      }
+
+       /* Buttons */
+      .buttons {
+        margin-top: 12px;
+      }
+      
+      .btn {
+        display: inline-block;
+        padding: 8px 14px;
+        border-radius: 20px;
+        font-size: 14px;
+        text-decoration: none;
+        margin-right: 8px;
+      }
+
+      .btn-primary {
         background: #0A66C2;
         color: white;
-        padding: 10px 16px;
-        border-radius: 20px;
-        text-decoration: none;
+      }
+
+      .btn-outline {
+        border: 1px solid #0A66C2;
+        color: #0A66C2;
+      }
+
+       /* Section */
+      .section {
+        background: white;
+        margin-top: 8px;
+        padding: 16px;
+      }
+
+      .section-title {
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+
+      .experience-item {
+        margin-bottom: 12px;
+      }
+
+      .job-title {
+        font-weight: bold;
         font-size: 14px;
+      }
+
+      .company {
+        font-size: 13px;
+        color: gray;
       }
     </style>
   </head>
 
   <body>
-    <div class="profile-card">
-      <div class="cover"></div>
-      <img src="profile.jpg" class="profile-img">
-      <div class="content">
-        <div class="name">Your Name</div>
-        <div class="title">Stardew Valley Farmer</div>
-        <a href="https://linkedin.com/in/yourusername" class="button">
-          View LinkedIng Profile
-        </a>
+    <div class="header"></div>
+
+    <div class= "profile">
+      <img src= "https://via.placeholder.com/100" class="profile-img">
+      <div class="profile-content">
+        <div class="name">Kar</div>
+        <div class="headline">
+          Stardew Valley Farmer
+        </div>
+        <div class="location">
+          Pelican Town
+        </div>
+
+        <div class="buttons">
+          <a href="#" class="btn btn-primary">Open to</a>
+          <a href="#" class="btn btn-outline">Add Section</a>
+          <a href="#" class="btn btn-outline">More</a>
+        </div>
       </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">About</div>
+      <div>
+        A passionate young farmer who chose to live in a small town to continue a family business and also developing the community center while building a network.
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Experience</div>
+      <div class="job-title">Farmer</div>
+      <div class="company">Yeah Farm</div>
+    </div>
+    <div class="experience-item">
+      <div class="job-title">Miner</div>
+      <div class="company">The Mines</div>
+    </div>
+
+  </div>
   </body>
 </html>
