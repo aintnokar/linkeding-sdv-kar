@@ -18,11 +18,81 @@
       body {
         margin: 0;
         font-family: 'SDV', sans-serif;
-        background-color: #f3f2ef;
+        background-color: #F4F2EE;
       }
 
       /* Header */
       .header {
+        background: #white;
+        border-bottom: 1px solid rgba(0,0,0,0.08);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .header-inner {
+        max-width: 1128px;
+        margin: 0 auto;
+        padding: 0 16px;
+        height: 52px;
+        display: flex;
+        alighn-items: center;
+        justify-content: space-between;
+      }
+
+      .left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .logo {
+        height: 28px;
+        cursor: pointer;
+      }
+
+      .search {
+        background: white;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 4px;
+        width: 220px;
+        font-size: 14px;
+      }
+
+      .nav-desktop a {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+      }
+
+      .nav a:hover {
+        color: black;
+      }
+
+      .nav-mobile {
+        display:none;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .nav-mobile input {
+        padding: 6px 10px;
+        border-radius: 20px;
+        border: 1px solid #ccc;
+      }
+
+      @media (max-width: 768px) {
+        .nav-desktop {
+          display: none;
+        }
+        .nav-mobile {
+          display: flex;
+        }
+      }
+
+      /* Cover */
+      .cover {
         background-color: #0A66C2;
         height: 80px;
       }
@@ -126,12 +196,38 @@
   </head>
 
   <body>
-    <div class="header"></div>
+    <header class="header">
+      <div class="header-inner">
 
+        <div class="left">
+          <img src="images/linkeding-hd.png" class="logo">
+          <input type="text" placeholder="Search" class="search">
+        </div>
+
+        <nav class="nav-desktop">
+          <a href="#">Home</a>
+          <a href="#">My Network</a>
+          <a href="#">Jobs</a>
+          <a href="#">Messaging</a>
+          <a href="#">Notifications</a>
+          <a href="#">Me</a>
+        </nav>
+
+        <div class="nav-mobile">
+          <img src="images/linkeding-hd.png" class="logo">
+          <input type="text" placeholder="Search">
+          <img src="images/linkeding-hd.png" class="logo">
+        </div>
+
+      </div>
+    </header>
+
+    <div class="header"></div>
     <div class="profile">
       <img src="images/profile-hd.png" class="profile-img">
-      <div class="profile-content">
-        <div class="name">Kar</div>
+        
+       <div class="profile-content">
+         <div class="name">Kar</div>
         <div class="headline">
           Stardew Valley Farmer
         </div>
