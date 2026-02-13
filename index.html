@@ -64,10 +64,25 @@
       .nav-desktop {
         display: flex;
         align-items: center;
-        gap: 24px;
+        gap: 30px;
       }
 
-      .nav-desktop a img:hover {
+      .nav-desktop-item {
+        display: flex;
+        flex-directions: column;
+        align-items: center;
+        text-decoration: none;
+        color: #666;
+        font-size: 12px;
+      }
+
+      .nav-item img {
+        width: 18px;
+        height: 18px;
+        margin-bottom: 4px;
+      }
+
+      .nav-item:hover {
         color: black;
       }
 
@@ -200,12 +215,30 @@
         </div>
 
         <nav class="nav-desktop">
-          <a href="#"><img src="images/Home-hd.png" class="logo"></a>
-          <a href="#"><img src="images/My-Network-hd.png" class="logo"></a>
-          <a href="#"><img src="images/Jobs-hd.png" class="logo"></a>
-          <a href="#"><img src="images/Notif-hd.png" class="logo"></a>
-          <a href="#"><img src="images/Notif-hd.png" class="logo"></a>
-          <a href="#"><img src="images/My-Network-hd.png" class="logo"></a>
+          <a href="#" class="nav-item">
+            <img src="images/Home-hd.png">
+            <span>Home</span>
+          </a>
+          <a href="#" class="nav-item">
+            <img src="images/My-Network-hd-hd.png">
+            <span>My Network</span>
+          </a>
+          <a href="#" class="nav-item">
+            <img src="images/Jobs-hd.png">
+            <span>Jobs</span>
+          </a>
+          <a href="#" class="nav-item">
+            <img src="images/Notif-hd.png">
+            <span>Messaging</span>
+          </a>
+          <a href="#" class="nav-item">
+            <img src="images/Notif-hd.png">
+            <span>Notifications</span>
+          </a>
+          <a href="#" class="nav-item">
+            <img src="images/Me-hd.png">
+            <span>Me</span>
+          </a>
         </nav>
 
         <div class="nav-mobile">
