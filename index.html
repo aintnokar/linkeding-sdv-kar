@@ -51,10 +51,22 @@
         cursor: pointer;
       }
 
+      .search-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
+
+      .search-logo {
+        position: absolute;
+        left: 10px;
+        width: 14px;
+        height: 14px;
+      }
+
       .search {
         background: white;
-        border: none;
-        padding: 6px 10px;
+        padding: 6px 10px 6px 30px;
         border-radius: 20px;
         width: 220px;
         border: 1px solid #ccc;
@@ -212,7 +224,10 @@
 
         <div class="left">
           <img src="images/linkeding-hd.png" class="logo">
-          <input type="text" placeholder="Search" class="search">
+          <div class="search-wrapper">
+            <img src="images/Search-hd.png" class="search-logo">
+            <input type="text" placeholder="Search" class="search">
+          </div>
         </div>
 
         <nav class="nav-desktop">
