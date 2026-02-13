@@ -117,16 +117,30 @@
         .nav-mobile {
           display: flex;
         }
-        .container {
-          margin-top: 12px;
+        .layout {
+          grid-template-columns: 1fr;
         }
       }
 
-      /* Container */
-      .container {
+      /* Layout */
+      .layout {
         max-width: 1128px;
         margin: 20px auto;
         padding: 0 16px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 24px;
+      }
+
+      .left-column {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .right-column {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
       }
       
       /* Cover */
@@ -284,52 +298,69 @@
       </div>
     </header>
 
-    <div class="container">
-      <div class="profile">
-        <img src="images/profile-hd.png" class="profile-img">
-        
-         <div class="profile-content">
-           <div class="name">Kar</div>
-          <div class="headline">
-            Stardew Valley Farmer
-          </div>
-          <div class="location">
-            Pelican Town
-          </div>
-
-          <div class="buttons">
-            <a href="#" class="btn btn-primary">Open to</a>
-            <a href="#" class="btn btn-outline">Add Section</a>
-            <a href="#" class="btn btn-outline more-btn">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                <circle cx="5" cy="12" r="2"></circle>
-                <circle cx="12" cy="12" r="2"></circle>
-                <circle cx="19" cy="12" r="2"></circle>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="section-title">About</div>
-        <div>
-          A passionate young farmer who chose to live in a small town to continue a family business and also developing the community center while building a network.
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="section-title">Experience</div>
+    <div class="layout">
       
-        <div class="experience-item">
-          <div class="job-title">Farmer</div>
-          <div class="company">Yeah Farm</div>
-        </div>
+      <div class="left-column">
         
-        <div class="experience-item">
-          <div class="job-title">Miner</div>
-          <div class="company">The Mines</div>
+        <div class="profile">
+          <div class="cover"></div>
+          <img src="images/profile-hd.png" class="profile-img">
+          
+           <div class="profile-content">
+             <div class="name">Kar</div>
+            <div class="headline">
+              Stardew Valley Farmer
+            </div>
+            <div class="location">
+              Pelican Town
+            </div>
+  
+            <div class="buttons">
+              <a href="#" class="btn btn-primary">Connect</a>
+              <a href="#" class="btn btn-outline">Message</a>
+              <a href="#" class="btn btn-outline more-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <circle cx="5" cy="12" r="2"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+                  <circle cx="19" cy="12" r="2"></circle>
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
+  
+        <div class="section">
+          <div class="section-title">About</div>
+          <div>
+            A passionate young farmer who chose to live in a small town to continue a family business and also developing the community center while building a network.
+          </div>
+        </div>
+  
+        <div class="section">
+          <div class="section-title">Experience</div>
+        
+          <div class="experience-item">
+            <div class="job-title">Farmer</div>
+            <div class="company">Yeah Farm</div>
+          </div>
+          
+          <div class="experience-item">
+            <div class="job-title">Miner</div>
+            <div class="company">The Mines</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-column">
+        
+        <div class="section">
+          <div class="section-title">More profiles for you</div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">People you may know</div>
+        </div>
+
       </div>
 
     </div>
