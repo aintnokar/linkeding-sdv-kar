@@ -54,19 +54,20 @@
       .search {
         background: white;
         border: none;
-        padding: 8px 12px;
-        border-radius: 4px;
+        padding: 6px 10px;
+        border-radius: 20px;
         width: 220px;
+        border: 1px solid #ccc;
         font-size: 14px;
       }
 
-      .nav-desktop a {
+      .nav-desktop {
         display: flex;
         align-items: center;
         gap: 24px;
       }
 
-      .nav a:hover {
+      .nav-desktop a img:hover {
         color: black;
       }
 
@@ -74,12 +75,6 @@
         display:none;
         align-items: center;
         gap: 10px;
-      }
-
-      .nav-mobile input {
-        padding: 6px 10px;
-        border-radius: 20px;
-        border: 1px solid #ccc;
       }
 
       @media (max-width: 768px) {
@@ -205,18 +200,16 @@
         </div>
 
         <nav class="nav-desktop">
-          <a href="#">Home</a>
-          <a href="#">My Network</a>
-          <a href="#">Jobs</a>
-          <a href="#">Messaging</a>
-          <a href="#">Notifications</a>
-          <a href="#">Me</a>
+          <a href="#"><img src="images/Home-hd.png" class="logo"></a>
+          <a href="#"><img src="images/My-Network-hd.png" class="logo"></a>
+          <a href="#"><img src="images/Jobs-hd.png" class="logo"></a>
+          <a href="#"><img src="images/Notif-hd.png" class="logo"></a>
+          <a href="#"><img src="images/Notif-hd.png" class="logo"></a>
+          <a href="#"><img src="images/My-Network-hd.png" class="logo"></a>
         </nav>
 
         <div class="nav-mobile">
-          <img src="images/linkeding-hd.png" class="logo">
-          <input type="text" placeholder="Search">
-          <img src="images/linkeding-hd.png" class="logo">
+          <img src="images/Setting-hd.png" class="logo">
         </div>
 
       </div>
